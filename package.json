@@ -1,0 +1,27 @@
+{
+  "name": "bttf",
+  "version": "0.0.1",
+  "description": "Back to the Future-themed Flux + React app",
+  "repository": "https://github.com/callahanchris/bttf",
+  "main": "js/app.js",
+  "dependencies": {
+    "flux": "^2.0.1",
+    "object-assign": "^1.0.0",
+    "react": "^0.12.1"
+  },
+  "devDependencies": {
+    "browserify": "^6.3.2",
+    "reactify": "^0.17.0",
+    "watchify": "^2.1.1"
+  },
+  "scripts": {
+    "watch": "watchify -o js/bundle.js -v -d .",
+    "build": "browserify js/app.js -o js/bundle.js"
+  },
+  "author": "Chris Callahan",
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}
