@@ -8,7 +8,7 @@ var Accelerator = React.createClass({
 
   render: function() {
     return (
-      <div>
+      <div className='accelerator'>
         <button onClick={this.handleClick}>Activate the Flux Capacitor</button>
       </div>
     );

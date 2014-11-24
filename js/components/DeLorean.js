@@ -1,8 +1,8 @@
 var React = require('react');
-var DeLoreanStore = require('../stores/DeLoreanStore');
-var ImageSection = require('./ImageSection');
 var Accelerator = require('./Accelerator');
+var ImageSection = require('./ImageSection');
 var Speedometer = require('./Speedometer');
+var DeLoreanStore = require('../stores/DeLoreanStore');
 
 var DeLorean = React.createClass({
   getInitialState: function() {
@@ -17,11 +17,15 @@ var DeLorean = React.createClass({
     DeLoreanStore.removeChangeListener(this._onChange);
   },
 
+  fluxCapacitorActivated: function() {
+    return this.state.speed >= 88;
+  },
+
   render: function() {
     return (
-      <div>
-        <ImageSection />
-        <Accelerator />
+      <div className="delorean">
+        <ImageSection activated={this.fluxCapacitorActivated()} />
+        {this.fluxCapacitorActivated() ? '' : <Accelerator />}
         <Speedometer speed={this.state.speed} />
       </div>
     );
