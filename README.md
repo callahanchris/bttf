@@ -1,6 +1,6 @@
 # 88 mph with Flux and React
 
-A basic app I built to go along with my [blog post](http://callahanchris.github.io/blog/2014/11/17/88-mph-with-flux-and-react/) on Flux and React.js.
+A basic app I built to go along with my [blog post](http://callahanchris.github.io/blog/2014/11/23/88-mph-with-flux-and-react/) on Flux and React.js.
 
 To run this on your computer, clone the repo locally:
 
