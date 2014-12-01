@@ -1,10 +1,10 @@
 module.exports = {
   ActionTypes: {
-    ACCELERATE: null
+    ACCELERATE: 'ACCELERATE'
   },
 
   PayloadSources: {
-    SERVER_ACTION: null,
-    VIEW_ACTION: null
+    SERVER_ACTION: 'SERVER_ACTION',
+    VIEW_ACTION: 'VIEW_ACTION'
   }
 };
