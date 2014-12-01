@@ -30,7 +30,7 @@ DeLoreanStore.dispatchToken = AppDispatcher.register(function(payload) {
 
   switch(action.type) {
   case ActionTypes.ACCELERATE:
-    _accelerate();
+    _accelerate(action.mph);
     DeLoreanStore.emitChange();
     break;
 
