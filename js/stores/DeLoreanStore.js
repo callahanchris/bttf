@@ -39,8 +39,8 @@ DeLoreanStore.dispatchToken = AppDispatcher.register(function(payload) {
   }
 });
 
-function _accelerate() {
-  _speed += 1;
+function _accelerate(mph) {
+  _speed += mph;
 }
 
 module.exports = DeLoreanStore;
