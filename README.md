@@ -5,7 +5,7 @@ A basic app I built to go along with my [blog post](http://callahanchris.github.
 To run this on your computer, clone the repo locally:
 
 ```
-git clone https://github.com/callahanchris/bttf
+git clone https://github.com/callahanchris/bttf && cd bttf
 ```
 
 Install the npm modules:
